@@ -1,0 +1,77 @@
+body {
+  font-family: system-ui;
+  background: #1b242f;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ico-wrap {
+  height: 60px;
+  width: 60px;
+  background: white;
+  position: relative;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease;
+  margin-right: 45px;
+}
+
+.ico-wrap::before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 50%;
+  background: #e31b6d;
+  bottom: 0;
+  right: 0;
+}
+
+.ico-wrap::after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 50%;
+  background: #e31b6d;
+  left: 0;
+  top: 0;
+}
+
+a {
+  position: absolute;
+  width: 94%;
+  height: 94%;
+  background: #1b242f;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ico-wrap:hover {
+  transform: scale(1.2);
+  background: #1b242f;
+}
+
+.ico-wrap a i {
+  position: absolute;
+  transform: rotate(-45deg);
+  transition: .3s ease;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.ico-wrap:hover a i {
+  transform: rotate(0deg);
+}
